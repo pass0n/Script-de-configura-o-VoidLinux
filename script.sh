@@ -2,7 +2,7 @@
 #Script de configuração do meu setup VoidLinux
 
 #Baixar e atualizar os repositórios Void
-sudo xbps-install -Su void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
+sudo xbps-install -S void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 sudo xbps-install -Su
 #Criar a pasta para instalação do nvidia DKMS
 sudo mkdir -p /var/lib/dkms
