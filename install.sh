@@ -36,11 +36,12 @@ cp cryptab fstab hostname locale.conf /mnt/etc/
 cp 10-key.conf /etc/dracut.conf.d/
 cp grub /etc/default/
 cd /
-cp /home/void.bk/key /
 #configurações da raiz e root
 chroot /mnt
 chown root:root /
 chmod 755 /
+cp /home/void.bk/key /
+chmod 000 /key
 passwd root
 #instalando o boot
 grub-install --target="x86_64" --efi-directory=:"/boot/efi" --bootloarder-id="VoidLinux" /dev/sda
