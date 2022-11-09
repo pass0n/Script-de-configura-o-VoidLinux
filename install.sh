@@ -26,7 +26,7 @@ cp /var/db/xbps/keys/* /mnt/var/db/xbps/keys/
 #instalar o sistema base e afins.
 xbps-install -Sy -R https://repo-default.voidlinux.org/current -r /mnt base-system base-devel lvm2 cryptsetup grub-x86_64-efi vim
 #remover arquivos e instalar os pré-configurados.
-cd .config
+cd config
 rm /mnt/etc/crypttab
 rm /mnt/etc/fstab
 rm /mnt/etc/hostname
