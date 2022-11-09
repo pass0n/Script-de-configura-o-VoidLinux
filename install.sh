@@ -1,5 +1,6 @@
 #!/bin/sh
 #script de instalação do meu setup voidlinux.
+
 #entar no modo super usuário
 su root
 #descriptografar e montar os volumes lvm
