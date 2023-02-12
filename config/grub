@@ -6,13 +6,13 @@ GRUB_DEFAULT=0
 #GRUB_HIDDEN_TIMEOUT_QUIET=false
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Void"
-GRUB_CMDLINE_LINUX_DEFAULT="rd.lvm.vg=lvm rd.luks.uuid=2a09603d-0cd0-4649-8673-5fa62f38fbcd loglevel=4"
-GRUB_ENABLE_CRYPTODISK=y 
+GRUB_CMDLINE_LINUX_DEFAULT="rd.lvm.vg=lv rd.luks.uuid=c81b314f-2e05-4b7d-bfa3-b4f3256a2643 loglevel=4"
+GRUB_ENABLE_CRYPTODISK=y
 # Uncomment to use basic console
 #GRUB_TERMINAL_INPUT="console"
 # Uncomment to disable graphical terminal
 #GRUB_TERMINAL_OUTPUT=console
-#GRUB_BACKGROUND=/usr/share/void-artwork/splash.png
+GRUB_BACKGROUND=/usr/share/void-artwork/splash.png
 GRUB_GFXMODE=1280x1024x32
 #GRUB_DISABLE_LINUX_UUID=true
 #GRUB_DISABLE_RECOVERY=true
