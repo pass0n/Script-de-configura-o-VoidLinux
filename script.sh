@@ -9,7 +9,10 @@ xbps-install -Sy
 mkdir -p /var/lib/dkms
 
 #baixar os meus pacotes padrões
-xbps-install -Sy xorg-minimal bspwm sxhkd polybar rofi terminator zathura zathura-pdf-mupdf neovim xdg-user-dirs picom dex scrot git vscode eclipse firefox Thunar tumbler thunar-archive-plugin file-roller unrar unzip p7zip thunar-media-tags-plugin setxkbmap xsetroot xprop nitrogen lxappearance gvfs elogind rtkit pavucontrol pipewire alsa-pipewire webp-pixbuf-loader ristretto mpv mesa-dri mesa-dri-32bit numlockx nvidia470 nvidia470-libs-32bit
+
+#$BSPWM = bspwm sxhkd polybar rofi picom dex scrot setxkbmap xsetroot xprop nitrogen lxappearance
+
+xbps-install -Sy xorg-minimal xfce4 zathura zathura-pdf-mupdf neovim xdg-user-dirs git vscode firefox Thunar tumbler thunar-archive-plugin file-roller unrar unzip p7zip thunar-media-tags-plugin gvfs elogind rtkit pavucontrol pipewire alsa-pipewire webp-pixbuf-loader ristretto mpv mesa-dri mesa-dri-32bit numlockx nvidia470 nvidia470-libs-32bit
 
 #configurar o pipewire
 ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/pipewire.desktop

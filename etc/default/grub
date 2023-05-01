@@ -6,7 +6,7 @@ GRUB_DEFAULT=0
 #GRUB_HIDDEN_TIMEOUT_QUIET=false
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Void"
-GRUB_CMDLINE_LINUX_DEFAULT="rd.lvm.vg=lv rd.luks.uuid=c81b314f-2e05-4b7d-bfa3-b4f3256a2643 loglevel=4"
+GRUB_CMDLINE_LINUX_DEFAULT="rd.lvm.vg=lvm rd.luks.uuid=c81b314f-2e05-4b7d-bfa3-b4f3256a2643 loglevel=4"
 GRUB_ENABLE_CRYPTODISK=y
 # Uncomment to use basic console
 #GRUB_TERMINAL_INPUT="console"

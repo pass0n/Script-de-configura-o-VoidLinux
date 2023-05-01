@@ -11,4 +11,4 @@
 # data2        /dev/hda5        /etc/cryptfs.key
 # swap         /dev/hdx4        /dev/urandom            swap,cipher=aes-cbc-essiv:sha256,size=256
 # vol          /dev/hdb7        none
-lv	           /dev/sda2	    /key.bin		        luks
+  lvm	       /dev/sda2	    /key.bin		        luks

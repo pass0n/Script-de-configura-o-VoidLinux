@@ -1,14 +1,14 @@
 #
 # See fstab(5).
 #
-# <file system>	    <dir>	    <type>	<options>		                              <dump>  <pass>
+# <file system>	        <dir>	    <type>	<options>		        <dump>  <pass>
 
-/dev/mapper/lv-root /           btrfs   rw,relatime,space_cache=v2,subvolid=5,subvol=/ 0 0
+/dev/mapper/lvm-volRoot /           ext4    rw,relatime             0 0
 
-/dev/sda1           /boot/efi   vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
+/dev/sda1               /boot/efi   vfat    rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro 0 0
 
-/dev/mapper/lv-home /home       ext4    rw,relatime 0 0
+/dev/mapper/lvm-volHome /home       ext4    rw,relatime             0 0
 
-/dev/mapper/lv-swap swap        swap    rw,noatime,discard      0 0
+/dev/mapper/lvm-volSwap swap        swap    rw,noatime,discard      0 0
 
-tmpfs               /tmp        tmpfs   defaults,nosuid,nodev   0 0
+tmpfs                   /tmp        tmpfs   defaults,nosuid,nodev   0 0
