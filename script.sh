@@ -27,6 +27,9 @@ else
     xbps-install -Syu $BSPWM $THUNAR $PKGS
 fi
 
+# horário de São Paulo
+ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+
 #configurar o pipewire
 ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/pipewire.desktop
 ln -s /usr/share/applications/pipewire-pulse.desktop /etc/xdg/autostart/pipewire-pulse.desktop
