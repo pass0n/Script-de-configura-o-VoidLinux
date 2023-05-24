@@ -4,6 +4,7 @@
 #descriptografar e montar os volumes lvm
 cryptsetup luksOpen /dev/sda2 lvm
 vgchange -ay
+
 #formatar as partições
 wipefs -a /dev/sda1
 wipefs -a /dev/mapper/lvm-volRoot

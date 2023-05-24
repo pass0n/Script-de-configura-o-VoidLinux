@@ -10,9 +10,22 @@ mkdir -p /var/lib/dkms
 
 #baixar os meus pacotes padrões
 
-#$BSPWM = bspwm sxhkd polybar rofi picom dex scrot setxkbmap xsetroot xprop nitrogen lxappearance
+BSPWM="bspwm sxhkd polybar rofi picom dex scrot setxkbmap xsetroot xprop nitrogen lxappearance ristretto"
 
-xbps-install -Sy xorg-minimal xfce4 zathura zathura-pdf-mupdf neovim xdg-user-dirs git vscode firefox Thunar tumbler thunar-archive-plugin file-roller unrar unzip p7zip thunar-media-tags-plugin gvfs elogind rtkit pavucontrol pipewire alsa-pipewire webp-pixbuf-loader ristretto mpv mesa-dri mesa-dri-32bit numlockx nvidia470 nvidia470-libs-32bit
+PKGS="xorg-minimal zathura zathura-pdf-mupdf neovim xdg-user-dirs git vscode firefox unrar unzip p7zip numlockx mpv mesa-dri mesa-dri-32bit gvfs elogind rtkit pavucontrol pipewire alsa-pipewire webp-pixbuf-loader nvidia470 nvidia470-libs-32bit"
+
+THUNAR="Thunar tumbler thunar-archive-plugin file-roller thunar-media-tags-plugin"
+
+XFCE="$THUNAR xfce4 ristretto"
+
+echo -n "XFCE4 = 1 / BSPWM = 2: "
+read -r n
+
+if [ "$n" = "1" ]; then
+    xbps-install -Syu $XFCE $PKGS
+else
+    xbps-install -Syu $BSPWM $THUNAR $PKGS
+fi
 
 #configurar o pipewire
 ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/pipewire.desktop
